@@ -1,0 +1,24 @@
+create table user (
+U_id INT NOT NULL PRIMARY KEY,
+nafn VARCHAR(20),
+netfang VARCHAR(20)
+);
+
+
+
+CREATE TABLE myndir (
+M_id INT NOT NULL PRIMARY KEY,
+skraarheiti VARCHAR(20),
+myndaheiti VARCHAR(20),
+textalysing VARCHAR(100),
+U_id INT NOT NULL,
+FOREIGN KEY(U_id) REFERENCES user(U_id)
+);
+
+insert into hofundur (H_id, nafn, netfang)
+
+values (1, "konni", "konni@konni.is");
+
+insert into hofundur (H_id, nafn, netfang)
+
+values (2, "hildur", "hildur@hildur.is");
